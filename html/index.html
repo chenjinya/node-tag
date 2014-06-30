@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+	<body>
+		<div id="container">
+			<h1>Welcome!</h1>
+<pre class="code">
+&lt;+ include("title.html") +>
+</pre>
+
+			<p><+ include("title.html") +></p>
+			
+			<pre class="code">
+&lt;p>&lt;+ echo("当你看到这里时，说明软体已经正常运作。"); +>&lt;/p>
+</pre>
+<p><+ echo("当你看到这里时，说明软体已经正常运作。"); +></p>
+			<pre class="code">
+
+&lt;p>循环&lt;/p>
+&lt;+ for(var i=0; i<3; i++){ +>
+	&lt;p>&lt;+=i +>&lt;/p>
+&lt;+ } +>
+			</pre>
+			<p>循环</p>
+			<+ for(var i=0; i<3; i++){ +>
+				<p><+=i +></p>
+			<+ }+>
+			
+			<pre class="code">
+&lt;p>时间：&lt;+=("The time is:"+(new Date())) +>&lt;/p>
+			</pre>
+			<p>时间：<+=("The time is:"+(new Date())) +></p>
+			<pre class="code">
+异步：&lt;+ async("listenername",function(echo){
+				setTimeout(function(){
+				echo ("异步执行部分已近完成")
+				done("listenername");
+			},1000);
+			});
+			 +>
+			</pre>
+			<p>异步：<+
+				async("listenername",function(echo){
+				setTimeout(function(){
+				echo ("异步执行部分已近完成,网页因此延迟1000毫秒显示")
+				done("listenername");
+			},1000);
+			});
+			 +></p>
+			<img id="logo" src="logo.png" />
+			
+		</div>
+	</body>
+</html>
