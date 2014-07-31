@@ -1,10 +1,13 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
+  "name": "node-tag",
+  "version": "0.0.4",
+  "license": "MIT",
+  "author":"Chen Jinya <Jinyachen@gmail.com>",
+  "description":"A light web engine in Node.js",
   "scripts": {
     "start": "node app.js"
   },
+  "main" :"app.js",
   "dependencies": {
   }
 }
