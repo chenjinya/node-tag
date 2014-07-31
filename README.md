@@ -13,6 +13,8 @@ Email: jinyachen@gmail.com
 Start
 ---------
 ####
+	#npm install node-tag
+	//将node_modules/node-tag拷贝到server root目录。
 	#node app.js
 
 Help
