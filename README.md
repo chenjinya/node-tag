@@ -10,6 +10,11 @@ Info
 Author: Chen Jinya
 Email: jinyachen@gmail.com
 
+Install
+---------
+####
+npm install node-tag
+
 Start
 ---------
 ####
