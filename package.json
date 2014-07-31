@@ -7,6 +7,10 @@
   "scripts": {
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/einino/node-tag"
+  }, 
   "main" :"app.js",
   "dependencies": {
   }
